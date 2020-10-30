@@ -1,0 +1,288 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Custom Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+	padding: 0 32px;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+	font-size: 16px;
+	position: relative;
+	background: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5));
+}
+a {
+	text-decoration: none;
+}
+.padding{
+	padding: 100px 0;
+}
+
+/* Flex box */
+.flex{
+    display: flex;
+	justify-content: space-between;
+}
+.column {
+	flex-direction: column;
+}
+.align-center {
+	align-self: center;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+
+/* Positioning */
+.relative-position {
+	position: relative;
+}
+.absolute-position {
+	position: absolute;
+}
+
+/* Headings */
+.hero-main-heading {
+	font-family: 'Henny Penny', cursive;
+	font-size: 74px;
+	font-weight: 900;
+	color:rgb(49, 219, 43);
+	letter-spacing: 20px;
+	text-shadow: 5px 5px 5px rgb(8, 88, 5);
+}
+.hero-secondary-heading {
+	font-family: 'Dancing Script', cursive;
+	font-size: 42px;
+	font-weight: 700;
+	color: rgb(109, 102, 102);
+	text-shadow: 5px 5px 5px rgb(51, 47, 47);
+}
+.gallery-heading {
+	font-family: 'Syne Tactile', cursive;
+	letter-spacing: 5px;
+	position: static;
+	font-size: 42px;
+	font-weight: 600;
+	color: #6f3c3c;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.heading-address {
+	font-size: 48px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+/* Header */
+header {
+	min-width: 100%;
+	padding: 32px 0;
+	position: absolute;
+}
+.header-navigation li {
+	margin-left: 100px;
+}
+.header-navigation a {
+	font-family: 'Syne Tactile', cursive;
+	font-size: 18px;
+	font-weight: 700;
+	color: rgb(209, 200, 200);
+	text-transform: uppercase;	
+}
+.brand {
+	font-family: 'Henny Penny', cursive;
+	font-size: 18px;
+	font-weight: 700;
+	color:rgb(49, 219, 43);
+}
+.brand p {
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+	color: rgb(114, 106, 106);
+	word-spacing: 5px;
+	text-align: center;
+}
+.submenu {
+	width: 190%;
+	top: 25px;
+	left: -75%;	
+	display: none;
+}
+.submenu-menu {
+	width:480%;
+	left: -270%;
+} 
+.submenu li {
+	padding: 10px;
+}
+
+.link-menu:hover .submenu-menu {
+	display: inline-block;
+}
+.link-other-services:hover .submenu-other-services {
+	display: inline-block;
+}
+.header-navigation a:hover{
+	color: green;
+}
+/* Hero Section */
+.hero{
+	padding: 300px 0 320px 0;
+	text-align: center;
+	background: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url("../media/spices-4.jpg") no-repeat;
+	background-size: cover;
+}
+.hero img {
+	width: 150px;
+	height: 150px;
+}
+/* Restaurant Gallery and Menu Gallery */
+.restaurant-gallery img, .menu-gallery img {
+	width: 32%;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	border: 5px solid rgb(95, 85, 85);
+	object-fit: cover;
+}
+/* Footer */
+footer {
+	background-color: rgb(51, 48, 48);
+	color: rgb(182, 182, 182);
+}
+.footer-main {
+	border-bottom: 1px solid rgb(100, 100, 100);
+	padding-bottom: 20px;
+}
+.company-info {
+	width: 40%;
+	align-self: center;
+}
+.find-us {
+	width: 50%;
+}
+.address-body {
+	font-size: 32px;
+	font-weight: 500;
+}
+.social a{
+	font-size: 26px;
+	color: rgb(107, 99, 99);
+	margin-left: 20px;
+}
+.company-info a {
+	color: rgb(107, 99, 99);
+}
+.social a:hover, .company-info a:hover{
+	color: rgb(212, 204, 204);
+}
+
+footer .copyright {
+	font-size: 14px;
+	margin-top: 20px;
+	font-weight: 200;
+}
+iframe {
+	margin-top: 20px;
+	border-radius: 10px;
+}
+.company-info .email {
+	display: inline-block;
+	padding-bottom: 40px;
+}
+ /***************************** Contact Page *****************************/
+.hero-contact {
+	
+}
+/***************************** Events Page *****************************/
+.hero-events {
+	
+}
+/***************************** North-Indian Page and South-Indian Page*****************************/
+/* Header */
+.menu-header {
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 40px;
+}
+.food-course-header {
+	font-size: 28px;
+	font-family: 'Syne Tactile', cursive;
+	margin-bottom: 10px;
+}
+.hero-north-indian {
+	
+}
+
+.list {
+	background-color: rgb(179, 174, 133);
+	box-shadow: 2px 2px 10px 5px rgb(56, 54, 54) ;
+	padding: 20px;
+
+}
+.col-1-4 {
+	width: 22%;
+}
+.list li{
+	margin-bottom: 10px;
+	color: rgb(41, 37, 3);
+}
+/***************************** South-Indian Page *****************************/
+.hero-south-indian {
+	
+}
+/***************************** Order-Online Page *****************************/
+.hero-order-online {
+	
+}
+/***************************** Offers Page *****************************/
+.hero-offers {
+	
+} 
